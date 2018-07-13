@@ -9,11 +9,13 @@ import { HeroesModule }     from './heroes/heroes.module';
 //import { LazyModule }     from './lazy/lazy.module';
 
 import { EagerComponent } from './eager.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EagerComponent
+    EagerComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

@@ -2,24 +2,30 @@ import { NgModule, ModuleWithProviders }      from '@angular/core';
 import { CommonModule }  from '@angular/common';
 import { FormsModule }   from '@angular/forms';
 
+import { HeroButtonComponent } from './hero-button/hero-button.component';
 import { FilterTextComponent } from './filter-text/filter-text.component';
 import { FilterTextService }   from './filter-text/filter-text.service';
 import { InitCapsPipe }        from './init-caps.pipe';
 
 import { CounterService }   from './counter.service';
+import { HighlightDirective } from './hero-button/hero-highlight.directive';
 
 @NgModule({
   imports: [CommonModule, FormsModule],
   declarations: [
+    HeroButtonComponent,
     FilterTextComponent,
-    InitCapsPipe
+    InitCapsPipe,
+    HighlightDirective
   ],
   providers: [],
   exports: [
     CommonModule,
     FormsModule,
+    HeroButtonComponent,
     FilterTextComponent,
-    InitCapsPipe
+    InitCapsPipe,
+    HighlightDirective
   ]
 })
 export class SharedModule {

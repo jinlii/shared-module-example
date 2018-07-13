@@ -10,7 +10,7 @@ import { SharedModule } from '../shared/shared.module'; // import this so it can
   imports: [
     CommonModule,
     FormsModule,
-    SharedModule,
+    SharedModule, // for <toh-filter-text> element in the template, otherwise the element is unknown to this module
     HeroRoutingModule
   ],
   declarations: [

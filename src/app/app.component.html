@@ -5,4 +5,24 @@
       <a routerLink="/lazy">Lazy</a>
     </nav>
 
+    <toh-hero-button label="test"></toh-hero-button>
+    <!-- `heroHighlight` is both the directive name and the data-bound aliased property name
+@Input('heroHighlight') color: string;
+be sure to export it from the SharedModule for use here!!
+  -->
+  <p [heroHighlight]="color">Highlight me!</p>
+
+    <h4>Pick a highlight color</h4>
+    <div>
+      <input type="radio" name="colors" (click)="color='lightgreen'">Green
+      <input type="radio" name="colors" (click)="color='yellow'">Yellow
+      <input type="radio" name="colors" (click)="color='cyan'">Cyan
+    </div>
+    
+    <p [heroHighlight]="color">Highlight me!</p>
+    <p [appHighlight]="color">Highlight me!</p>
+    <p [appHighlight]="color" defaultColor="violet">
+      Highlight me too!
+    </p>
+
 <router-outlet></router-outlet>

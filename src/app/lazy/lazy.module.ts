@@ -7,6 +7,7 @@ import { LazyRoutingModule } from './lazy-routing.module';
 
 @NgModule({
   imports: [
+    // don't think this is needed
     SharedModule, //we will not call the forRoot method because we don't want to register the service again in a different level of the DI tree
     LazyRoutingModule
   ],
