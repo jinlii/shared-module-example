@@ -6,5 +6,8 @@
 </ul>
 <!--
 <input type="text" id="filterText" [(ngModel)]="filter" (keyup)="filterChanged($event)" />
+
+changed in () is the output emitted from filter-text.component.ts
+when that's emitted, callback the filterChanged in its own .ts to send it to the filter service to filter out only the matchted records in Id or Name
  -->
 <toh-filter-text (changed)="filterChanged($event)"></toh-filter-text>
